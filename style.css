@@ -1,7 +1,95 @@
-* {
+*, ::before, ::after {
+    box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
+    line-height: 1.75rem;
+    font-size: 1.05rem;
+}
+
+::selection {
+    text-shadow: none;
+    color: #000;
+    background: #00beff;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+summary {
+    font-family: 'Mulish', sans-serif;
+    width: fit-content;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details > summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+summary::before {
+    content: url('./img/caret-right-svgrepo-com.svg');
+}
+
+details[open] summary:before {
+    content: url('./img/caret-down-svgrepo-com.svg');
+}
+
+.svg {
+    color: chocolate;
+}
+
+nav,
+article,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    height: 20rem;
+    background: #131313;
+    color: #BABABA;
+}
+
+.nav-wrapper,
+.article-wrapper,
+.footer-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: .25rem;
+}
+
+.nav-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-subtitle {
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: 0.8rem;
 }
