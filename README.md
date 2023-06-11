@@ -1,3 +1,3 @@
-# drobnymdruczkiem
+# drobnym druczkiem
 
-O tym, czego nam nie mówią
+Czyli o tym, czego nam nie mówią

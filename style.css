@@ -1,8 +1,12 @@
+:root {
+    --grey-bg: #eaeaea;
+    --grey-text: #bdbdbd;
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     line-height: 1.75rem;
-    font-size: 1.05rem;
 }
 
 ::selection {
@@ -11,20 +15,16 @@
     background: #00beff;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
-kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd,
-ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu,
-nav, output, ruby, section, summary, time, mark, audio, video {
+body {
     margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-link {
+    color: inherit;
 }
 
 img {
@@ -32,32 +32,17 @@ img {
     display: block;
 }
 
-summary {
-    font-family: 'Mulish', sans-serif;
+ul {
     width: fit-content;
-    font-size: 2em;
-    font-weight: bold;
-    cursor: pointer;
 }
 
-details > summary {
-    list-style: none;
-}
 
-summary::-webkit-details-marker {
-    display: none
-}
-
-summary::before {
-    content: url('./img/caret-right-svgrepo-com.svg');
-}
-
-details[open] summary:before {
-    content: url('./img/caret-down-svgrepo-com.svg');
-}
-
-.svg {
-    color: chocolate;
+.img-caption {
+    padding: 0 .25rem;
+    background: var(--grey-bg);
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 nav,
@@ -68,28 +53,41 @@ footer {
     align-items: center;
 }
 
-footer {
-    height: 20rem;
-    background: #131313;
-    color: #BABABA;
-}
-
 .nav-wrapper,
 .article-wrapper,
 .footer-wrapper {
     width: 100%;
     max-width: 1200px;
-    padding: .25rem;
+}
+
+.nav-wrapper,
+.article-p,
+.footer-wrapper {
+    padding: .5rem .25rem;
 }
 
 .nav-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 1.5rem;
 }
 
 .nav-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: .05em;
+    color: var(--grey-text);
     text-transform: uppercase;
-    letter-spacing: .05rem;
-    font-size: 0.8rem;
+}
+
+footer {
+    background: #131313;
+    color: #BABABA;
+}
+
+.footer-wrapper div {
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
 }
