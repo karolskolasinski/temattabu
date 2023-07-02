@@ -39,9 +39,11 @@
         <div class="title-wrapper">
           <h2 class="title-h">Home</h2>
           <h2>
-            <span class="icon icon-copy" title="kopiuj link"></span>
+            <span class="icon icon-copy" title="kopiuj link" onclick="copyLink()"></span>
             <span class="icon icon-share" title="udostępnij"></span>
-            <span class="icon icon-favorite-outline" title="dodaj do ulubionych"></span>
+            <a href="#comments">
+              <span class="icon icon-comment-outline" title="komentarze"></span>
+            </a>
           </h2>
 
           <div class="tag-wrapper">
@@ -70,16 +72,26 @@
           </a>
         </li>
       </ul>
+
+      <div id="comments" class="comments">
+        <h3>Komentarze</h3>
+
+        <div class="fb-comments" data-href="https://karolskolasinski.github.io/drobnymdruczkiem/"
+          data-numposts="10" data-width="100%"></div>
+      </div>
     </div>
   </article>
 
   <footer>
     <div class="footer-wrapper">
       <div>© 2016 - 2023 drobnymdruczkiem</div>
-      <div>Created By <a href="https://github.com/karolskolasinski">karolskolasinski</a></div>
+      <div>Created By <a href="https://www.linkedin.com/in/karolskolasinski/">karolskolasinski</a>
+      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v17.0" nonce="wTOL3EST"></script>
 </body>
 </html>

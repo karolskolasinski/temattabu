@@ -15,6 +15,10 @@
     background: #00beff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -142,6 +146,10 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
 }
 
+.comments {
+    margin: 6rem .25rem 2rem .25rem;
+}
+
 @media (min-width: 576px) {
     .img-wrapper {
         width: 50%;
@@ -166,5 +174,16 @@ footer {
     .tag-cloud {
         display: flex;
         gap: .5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .art-p,
+    .footer-wrapper {
+        padding: .5rem 0;
+    }
+
+    .comments {
+        margin: 6rem 0 2rem 0;
     }
 }
