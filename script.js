@@ -1,23 +1,22 @@
 function copyLink() {
     const adresStrony = window.location.href;
+    const copyIcon = document.querySelector(".icon-copy");
 
     navigator.clipboard.writeText(adresStrony)
         .then(function() {
             console.log('Adres strony został skopiowany do schowka: ' + adresStrony);
 
-            const copyIcon = document.querySelector(".icon-copy");
             if (copyIcon) {
-                copyIcon.attributes.title.value = "skopiowano"
-                copyIcon.classList.remove("icon-copy");
-                copyIcon.classList.add("icon-check");
+                copyIcon.setAttribute("title", "Skopiowano");
+                copyIcon.classList.replace("icon-copy", "icon-check");
             }
 
             setTimeout(() => {
-                copyIcon.attributes.title.value = "kopiuj link";
-                copyIcon.classList.remove("icon-check");
-                copyIcon.classList.add("icon-copy");
-            }, 1500)
-
+                if (copyIcon) {
+                    copyIcon.setAttribute("title", "Kopiuj link");
+                    copyIcon.classList.replace("icon-check", "icon-copy");
+                }
+            }, 1500);
         })
         .catch(function(error) {
             console.error('Błąd podczas kopiowania adresu strony: ', error);
