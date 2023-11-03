@@ -15,6 +15,8 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="icons.css">
+
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -41,9 +43,7 @@
           <h2>
             <span class="icon icon-copy" title="kopiuj link" onclick="copyLink()"></span>
             <span class="icon icon-share" title="udostępnij"></span>
-            <a href="#comments">
-              <span class="icon icon-comment-outline" title="komentarze"></span>
-            </a>
+            <span class="icon icon-favorite-outline" title="dodaj do ulubionych"></span>
           </h2>
 
           <div class="tag-wrapper">
@@ -58,7 +58,8 @@
         </div>
       </div>
 
-      <p class="art-p">
+      <h1 class="row">Home</h1>
+      <p class="row">
         Mówi się, że to, co chce się ukryć w umowach, zapisuje się drobnym druczkiem. Jednak poza
         umowami jest też kilka rzeczy, które warto wiedzieć o rzeczywistości. Sprawy, o których się
         otwarcie nie mówi, są niepopularne, bywają przemilczane. Dokładnie tak, jak by ktoś chciał
@@ -72,27 +73,11 @@
           </a>
         </li>
       </ul>
-
-      <div id="comments" class="comments">
-        <h3>Komentarze</h3>
-
-        <div id="fb-root"></div>
-        <div class="fb-comments" data-href="https://karolskolasinski.github.io/drobnymdruczkiem/"
-          data-numposts="10" data-width="100%"></div>
-      </div>
     </div>
   </article>
 
   <footer>
-    <div class="footer-wrapper">
-      <div>© 2016 - 2023 drobnymdruczkiem</div>
-      <div>Created By <a href="https://www.linkedin.com/in/karolskolasinski/">karolskolasinski</a>
-      </div>
-    </div>
+    © 2016 - 2023 drobnymdruczkiem | Created By <a href="https://www.linkedin.com/in/karolskolasinski/">karolskolasinski</a>
   </footer>
-
-  <script src="script.js"></script>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v17.0" nonce="wTOL3EST"></script>
 </body>
 </html>
