@@ -97,11 +97,18 @@ footer {
     display: flex;
 }
 
+
 .title-wrapper {
     display: none;
 }
 
-.title-h {
+.title-header-wrapper {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.title-header-wrapper h2 {
     margin-top: 0;
 }
 
