@@ -33,6 +33,7 @@ class Header extends HTMLElement {
         <div class="title-wrapper">
           <div class="title-header-wrapper">
             <h2 id="title-header">${titleHeader}</h2>
+            <sl-icon name="copy"></sl-icon>
             <h2 class="icon icon-copy" title="kopiuj link" onclick="copyLink()"></h2>
           </div>
 
