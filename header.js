@@ -3,7 +3,7 @@ class Header extends HTMLElement {
 
   constructor() {
     super();
-    const img = this.getAttribute("img");
+    const filename = this.getAttribute("filename");
     const caption = this.getAttribute("caption");
     const titleHeader = this.getAttribute("title-header");
     const tags = this.getAttribute("tags").split(", ");
@@ -16,7 +16,7 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <header class="art-header">
         <div class="img-wrapper">
-          <img src="img/${img}" alt="image" id="image">
+          <img src="img/${filename}" alt="image" id="image">
           
           ${caption ? `<div class="img-caption">${caption}</div>` : ""}
           
@@ -38,7 +38,6 @@ class Header extends HTMLElement {
           </div>
 
           <div class="tag-wrapper">
-            <h4>Tagi:</h4>
             <div class="tag-cloud">
               ${tags.map(tag => `<div>${tag}</div>`).join('')}
             </div>
