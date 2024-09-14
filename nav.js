@@ -6,7 +6,7 @@ class Nav extends HTMLElement {
       <nav>
         <div class="nav-wrapper">
           <div class="nav-title">
-            <a href="index.html">drobnym druczkiem</a>
+            <a href="index.html">temat tabu</a>
           </div>
           <div class="nav-subtitle">czyli o tym, czego nam nie mówią</div>
         </div>
