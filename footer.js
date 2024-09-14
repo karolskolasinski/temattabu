@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
 
     this.innerHTML = `
       <footer>
-        © 2016 - 2023 drobnymdruczkiem | Created By <a href=${href}>karolskolasinski</a>
+        © 2016 - 2023 temattabu | Created By <a href=${href}>karolskolasinski</a>
       </footer>
     `;
   }
